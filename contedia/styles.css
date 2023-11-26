@@ -1,0 +1,117 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+h1{
+    text-align:center;
+    margin-top: 5%;
+    color:  #30ba8f
+
+}
+
+button {
+    background-color: #87ceeb;
+    box-shadow: 5px 5px 5px gray;
+    border: 3px outset rgb(79, 79, 79);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #40e0d0;
+    box-shadow: 3px 3px 3px gray;
+    border: none;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    margin-top: 5%;
+    width: 200px;
+}
+
+.formContainer {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .formContainer .formContent {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .formContainer .formContent::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .formContainer .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+  #nameField{
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  input[type="checkbox" i]  {
+    width: 20px;
+    height: 20px;
+  }
+
+  select {
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+  }
+
+  #photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #retailer{
+    margin-top: 10px;
+  }
+
